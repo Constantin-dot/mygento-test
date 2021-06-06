@@ -1,0 +1,70 @@
+.ppModal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: #5a5a5a, $alpha: 0.4);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+
+    .ppModalContent {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: white;
+        max-width: 340px;
+        transform: scale(0.5);
+        transition: 0.4s all;
+        @media screen and (min-width: 930px) {
+            max-width: 758px;
+        }
+
+        .ppModalContentHeader {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        .ppModalHideButton {
+            color: #2f80ed;
+            font-size: 30px;
+            border: none;
+            background: none;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        .ppModalText {
+            margin-top: 30px;
+            overflow-y: scroll;
+            max-height: 350px;
+        }
+
+        .ppModalContentAgreeButton {
+            width: 308px;
+            @media screen and (min-width: 930px) {
+                width: 360px;
+            }
+        }
+    }
+
+    .ppModalContentActive {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.active {
+    opacity: 1;
+    pointer-events: all;
+}

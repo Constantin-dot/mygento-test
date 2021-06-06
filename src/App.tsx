@@ -1,7 +1,5 @@
-import React from "react";
+import { ApplicantFormContainer } from "./applicatForm/ApplicantFormContainer";
 
-function App() {
-    return <div>Mygento Code Test</div>;
-}
-
-export default App;
+export const App = () => {
+    return <ApplicantFormContainer />;
+};

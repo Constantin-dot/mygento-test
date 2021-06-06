@@ -1,0 +1,128 @@
+.wrapper {
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 30px;
+    @media screen and (min-width: 930px) {
+        width: 928px;
+    }
+
+    .ownDataBlock {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 600px) {
+            width: 592px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            position: relative;
+        }
+    }
+
+    .cvFileLabel {
+        color: #595959;
+        background: #f5f5f5;
+        border: 1px dashed #d9d9d9;
+        border-radius: 2px;
+        width: 100%;
+        height: 42px;
+        text-align: center;
+        padding-top: 9px;
+        @media screen and (min-width: 600px) {
+            width: 256px;
+            position: absolute;
+            bottom: 32px;
+            right: 0;
+        }
+
+        .cvFileInput {
+            display: none;
+        }
+    }
+
+    .cvFileName {
+        color: rgb(0, 174, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 100%;
+        height: 22px;
+        @media screen and (min-width: 600px) {
+            width: 256px;
+            position: absolute;
+            bottom: 34px;
+            right: 0;
+        }
+
+        .cvFileNameButton {
+            border: none;
+            color: #8c8c8c;
+            background-color: #ffffff;
+            font-size: 30px;
+        }
+    }
+
+    .radio {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (min-width: 600px) {
+            justify-content: flex-start;
+        }
+
+        .errorText {
+            font-weight: 600;
+            font-size: 12px;
+            color: #ff4d4d;
+            @media screen and (min-width: 600px) {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .agreementText {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+
+        .policyText {
+            color: rgb(0, 174, 255);
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            cursor: pointer;
+        }
+
+        .agreementErrorText {
+            font-weight: 600;
+            font-size: 12px;
+            color: #ff4d4d;
+        }
+    }
+
+    .submitButton {
+        color: #ffffff;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding-top: 2px;
+        background: #1890ff;
+        border-radius: 2px;
+        border: none;
+        @media screen and (min-width: 600px) {
+            width: 360px;
+        }
+
+        &:disabled {
+            background: #e8e8e8;
+            border: 1px solid #d9d9d9;
+            box-sizing: border-box;
+            border-radius: 2px 0px 0px 2px;
+        }
+    }
+}
