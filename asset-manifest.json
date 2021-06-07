@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mygento-test/static/css/main.092ed476.chunk.css",
-    "main.js": "/mygento-test/static/js/main.e12d5515.chunk.js",
-    "main.js.map": "/mygento-test/static/js/main.e12d5515.chunk.js.map",
+    "main.js": "/mygento-test/static/js/main.f4e732ab.chunk.js",
+    "main.js.map": "/mygento-test/static/js/main.f4e732ab.chunk.js.map",
     "runtime-main.js": "/mygento-test/static/js/runtime-main.ecc1b194.js",
     "runtime-main.js.map": "/mygento-test/static/js/runtime-main.ecc1b194.js.map",
     "static/js/2.931c88a1.chunk.js": "/mygento-test/static/js/2.931c88a1.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ecc1b194.js",
     "static/js/2.931c88a1.chunk.js",
     "static/css/main.092ed476.chunk.css",
-    "static/js/main.e12d5515.chunk.js"
+    "static/js/main.f4e732ab.chunk.js"
   ]
 }
