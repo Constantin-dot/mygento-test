@@ -29,7 +29,6 @@ export const ApplicantForm: React.FC<ApplicantFormPropsType> = React.memo(
                 return errors;
             },
             onSubmit: (values, { resetForm }) => {
-                console.log(values);
                 setSuccessModalVisible({
                     isVisible: true,
                     name: formik.values.firstName,
